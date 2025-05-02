@@ -13,16 +13,17 @@ export default function MusicPlayer() {
   }, []);
 
   const handleLogoClick = () => {
-    if (audio) {
-      audio.play();
-      setAnimate(true); // trigger animation
-
-      // Redirect after animation ends (400ms)
-      setTimeout(() => {
-        router.push('/main');
-      }, 400);
-    }
+    const audio = new Audio('/media/music.mp3'); // ✅ ensure user gesture triggers it
+    audio.play(); // ✅ mobile-safe playback
+  
+    setAnimate(true); // trigger animation
+  
+    // Redirect after short delay to let animation play
+    setTimeout(() => {
+      router.push('/main');
+    }, 400); // Adjust delay as needed
   };
+  
 
   return (
     <div style={styles.container}>
