@@ -15,7 +15,7 @@ export default function MusicPlayer() {
   const handleLogoClick = () => {
     const audio = new Audio('/media/music.mp3'); // ✅ ensure user gesture triggers it
     audio.play(); // ✅ mobile-safe playback
-  
+    window.globalAudio = audio;
     setAnimate(true); // trigger animation
   
     // Redirect after short delay to let animation play
