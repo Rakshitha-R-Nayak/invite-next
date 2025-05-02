@@ -2,7 +2,7 @@
 import Head from 'next/head';
 
 import styles from '@/styles/Home.module.css';
-
+import AutoMusic from './Automusic';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -16,7 +16,7 @@ export default function Main() {
     }
   }, []);
     return (<>
-    
+    <AutoMusic />
         <Head>
         <title>Wedding Invitation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
