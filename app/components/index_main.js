@@ -9,7 +9,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 export default function Main() {
+  useEffect(() => {
+    // Resume music if available
+    if (typeof window !== 'undefined' && window.globalAudio) {
+      window.globalAudio.play().catch(() => {});
+    }
+  }, []);
     return (<>
+    
         <Head>
         <title>Wedding Invitation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
