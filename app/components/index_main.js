@@ -26,10 +26,10 @@ export default function Main() {
           <h3>Our Moments</h3>
           <div className={styles.photoContainer}>
             <div className={styles.photoSlide}>
-              <img src="/media/Photo2.jpg" alt="Bride" />
+              <img src="/media/groom.jpg" alt="groom" />
             </div>
             <div className={styles.photoSlide}>
-              <img src="/media/photo1.jpg" alt="Groom" />
+              <img src="/media/bride1.jpg" alt="bride" />
             </div>
           </div>
         </section>
@@ -43,18 +43,60 @@ export default function Main() {
             pagination={{ clickable: true }}
             className={styles.swiper}
           >
-            <SwiperSlide><img src="/media/photo4.jpg" alt="Additional 1" /></SwiperSlide>
-            <SwiperSlide><img src="/media/photo6.jpg" alt="Additional 2" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add1.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add6.jpg" alt="Additional 2" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add4.jpg" alt="Additional 1" /></SwiperSlide>
+           
+            <SwiperSlide><img src="/media/add2.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add5.jpg" alt="Additional 2" /></SwiperSlide>
           </Swiper>
         </section>
 
         <section className={styles.venue}>
-          <h3>Wedding Venue</h3>
-          <p>Kateelu, Karnataka 574148</p>
-          <a href="https://www.google.com/maps/place/Kateelu,+Karnataka+574148" target="_blank" rel="noopener noreferrer">
+        <h2>Sangeeth Venue</h2>
+          <p>UDBHAV VINTAGE RESORT</p>
+          <a href="https://www.google.com/maps/place/UDBHAV+VINTAGE+RESORT/@13.2832906,74.7288802,17z/data=!3m1!4b1!4m9!3m8!1s0x3bbcbb5cd1447ebf:0x7218a57a1f8e5180!5m2!4m1!1i2!8m2!3d13.2832906!4d74.7314551!16s%2Fg%2F11vkzbn9x_?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
             <button className={styles.locationButton}>View Location on Google Maps</button>
           </a>
-          <p>India</p>
+
+
+          <section className={styles.Sangeetgallery}>
+          <h3>Additional Photos</h3>
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
+            pagination={{ clickable: true }}
+            className={styles.swiperSangeeth}
+          >
+            <SwiperSlide><img src="/media/sang3.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/sang2.jpg" alt="Additional 2" /></SwiperSlide>
+            <SwiperSlide><img src="/media/sang1.jpg" alt="Additional 1" /></SwiperSlide>
+           
+            
+          </Swiper>
+        </section>
+
+
+
+
+
+
+
+
+         
+          <h2>Wedding Venue</h2>
+          <p>NARAYANAGURU AUDITORIUM, BANNANJE, UDUPI</p>
+          
+          
+          <a
+  href="https://www.google.com/maps/place/Narayanaguru+Auditorium,+Udupi/@13.3456821,74.7361433,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbcbb794f8c3edd:0x6abdfc29f11180dd!8m2!3d13.3456821!4d74.7387182!16s%2Fg%2F11c2pmtqw7?entry=ttu"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+            <button className={styles.locationButton}>View Location on Google Maps</button>
+          </a>
+          
         </section>
 
         <section className={styles.videoSection}>
