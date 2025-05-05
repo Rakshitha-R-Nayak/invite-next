@@ -1,23 +1,15 @@
 'use client';
 import Head from 'next/head';
-
 import styles from '@/styles/Home.module.css';
-import AutoMusic from './Automusic';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 export default function Main() {
-  useEffect(() => {
-    // Resume music if available
-    if (typeof window !== 'undefined' && window.globalAudio) {
-      window.globalAudio.play().catch(() => {});
-    }
-  }, []);
-    return (<>
-    <AutoMusic />
-        <Head>
+  return (
+    <>
+      <Head>
         <title>Wedding Invitation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet" />
@@ -66,20 +58,19 @@ export default function Main() {
         </section>
 
         <section className={styles.videoSection}>
-  <div className={styles.textBlock}>
-    <h3>Our Special Moments</h3>
-    <p>Watch our love story unfold</p>
-    <p>We hope you enjoy it!</p>
-  </div>
+          <div className={styles.textBlock}>
+            <h3>Our Special Moments</h3>
+            <p>Watch our love story unfold</p>
+            <p>We hope you enjoy it!</p>
+          </div>
 
-  <div className={styles.videoBlock}>
-    <video className={styles.video} controls autoPlay muted loop>
-      <source src="/media/video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</section>
-
+          <div className={styles.videoBlock}>
+            <video className={styles.video} controls autoPlay muted loop>
+              <source src="/media/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
 
         <footer className={styles.footer}>
           <p>We can't wait to celebrate with you!</p>

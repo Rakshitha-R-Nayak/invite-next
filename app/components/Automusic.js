@@ -1,29 +1,46 @@
-import { useEffect } from 'react';
+//app/cmponents/Automusic.js
+'use client';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
-export default function AutoMusic() {
+export default function MusicPlayer() {
+  const [audio, setAudio] = useState(null);
+  const router = useRouter();
+
   useEffect(() => {
-    const audio = new Audio('/media/music.mp3');
-    audio.loop = true;
-    audio.play().catch(err => {
-      console.warn('Autoplay blocked:', err);
-    });
+    const music = new Audio('/media/music.mp3');
+    setAudio(music);
   }, []);
+
+  const handleLogoClick = () => {
+    if (audio) {
+      audio.play();
+      setTimeout(() => {
+        router.push('/main');
+      }, 1000); // wait 1 sec before navigating (optional)
+    }
+  };
 
   return (
     <div style={styles.container}>
-      <h1>Welcome!</h1>
-      <p>Music is playing in the background 🎵</p>
+      <img
+        src="/media/logo.jpg"
+        alt="Logo"
+        style={styles.logo}
+        onClick={handleLogoClick}
+      />
     </div>
   );
 }
 
 const styles = {
   container: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'sans-serif',
+    textAlign: 'center',
+    marginTop: '100px',
+  },
+  logo: {
+    width: '200px',
+    height: '200px',
+    cursor: 'pointer',
   },
 };

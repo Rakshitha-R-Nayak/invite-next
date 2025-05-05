@@ -3,27 +3,29 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 export default function MusicPlayer() {
-  const [audio, setAudio] = useState(null);
   const [animate, setAnimate] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    const music = new Audio('/media/music.mp3');
-    setAudio(music);
+    if (!window.globalAudio) {
+      const music = new Audio('/media/music.mp3');
+      music.loop = true;
+      window.globalAudio = music;
+    }
   }, []);
 
   const handleLogoClick = () => {
-    const audio = new Audio('/media/music.mp3'); // ✅ ensure user gesture triggers it
-    audio.play(); // ✅ mobile-safe playback
-    window.globalAudio = audio;
-    setAnimate(true); // trigger animation
-  
-    // Redirect after short delay to let animation play
+    const audio = window.globalAudio;
+    if (audio) {
+      audio.play().catch(() => {});
+    }
+
+    setAnimate(true);
+
     setTimeout(() => {
       router.push('/main');
-    }, 400); // Adjust delay as needed
+    }, 400); // delay for animation
   };
-  
 
   return (
     <div style={styles.container}>
@@ -34,7 +36,6 @@ export default function MusicPlayer() {
           ...styles.logo,
           transform: animate ? 'scale(2)' : 'scale(1)',
           transition: 'transform 0.6s ease-in-out',
-          
         }}
         onClick={handleLogoClick}
       />
@@ -50,7 +51,6 @@ const styles = {
     height: '100vh',
     backgroundColor: '#f0f0f0',
     overflow: 'hidden',
-     // prevent scrollbar during slide
   },
   logo: {
     width: '200px',
