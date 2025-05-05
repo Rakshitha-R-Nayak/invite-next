@@ -18,7 +18,7 @@ export default function Main() {
       <main className={styles.body}>
         <header className={styles.header}>
           <h1 className={styles.h1}>You're Invited!</h1>
-          <h2>Bride & Groom</h2>
+          <h2>Bride & Groom11</h2>
           <p>Join us on 28-04-2025</p>
         </header>
 
