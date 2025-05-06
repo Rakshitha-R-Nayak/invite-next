@@ -8,7 +8,7 @@ export default function MusicPlayer() {
   const router = useRouter();
 
   useEffect(() => {
-    const music = new Audio('/media/music.mp3');
+    const music = new Audio('/media/neelashala.mp3');
     setAudio(music);
   }, []);
 
@@ -37,10 +37,12 @@ const styles = {
   container: {
     textAlign: 'center',
     marginTop: '100px',
+    
   },
   logo: {
     width: '200px',
     height: '200px',
     cursor: 'pointer',
+    
   },
 };
