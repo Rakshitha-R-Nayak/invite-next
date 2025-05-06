@@ -18,12 +18,15 @@ export default function Main() {
       <main className={styles.body}>
         <header className={styles.header}>
           <h1 className={styles.h1}>You're Invited!</h1>
-          <h2>Bride & Groom11</h2>
-          <p>Join us on 28-04-2025</p>
+          <h2 className={styles.nam}>SACHIN & VIBHA</h2>
+          <h2>We are getting married!</h2>
+          <h2 className="font-[calibri]">Save the date</h2>
+
+          <p>Join us on 07-12-2025</p>
         </header>
 
         <section className={styles.gallery}>
-          <h3>Our Moments</h3>
+          
           <div className={styles.photoContainer}>
             <div className={styles.photoSlide}>
               <img src="/media/groom.jpg" alt="groom" />
@@ -35,7 +38,7 @@ export default function Main() {
         </section>
 
         <section className={styles.additionalGallery}>
-          <h3>Additional Photos</h3>
+        <h3 className={styles.wed}>SACHIN WEDS VIBHA</h3>
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -45,23 +48,19 @@ export default function Main() {
           >
             <SwiperSlide><img src="/media/add1.jpg" alt="Additional 1" /></SwiperSlide>
             <SwiperSlide><img src="/media/add6.jpg" alt="Additional 2" /></SwiperSlide>
-            <SwiperSlide><img src="/media/add4.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add3.jpg" alt="Additional 1" /></SwiperSlide>
            
             <SwiperSlide><img src="/media/add2.jpg" alt="Additional 1" /></SwiperSlide>
             <SwiperSlide><img src="/media/add5.jpg" alt="Additional 2" /></SwiperSlide>
           </Swiper>
         </section>
-
+<h2 className={styles.function}>FUNCTIONS</h2>
         <section className={styles.venue}>
-        <h2>Sangeeth Venue</h2>
-          <p>UDBHAV VINTAGE RESORT</p>
-          <a href="https://www.google.com/maps/place/UDBHAV+VINTAGE+RESORT/@13.2832906,74.7288802,17z/data=!3m1!4b1!4m9!3m8!1s0x3bbcbb5cd1447ebf:0x7218a57a1f8e5180!5m2!4m1!1i2!8m2!3d13.2832906!4d74.7314551!16s%2Fg%2F11vkzbn9x_?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-            <button className={styles.locationButton}>View Location on Google Maps</button>
-          </a>
+       
 
-
+<h2 className={styles.sangtext}>SANGEETH</h2>
           <section className={styles.Sangeetgallery}>
-          <h3>Additional Photos</h3>
+          
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -75,20 +74,38 @@ export default function Main() {
            
             
           </Swiper>
+          <h2 className={styles.sangeeth}>Sangeeth Venue
+          <p className="font-[Cinze]">UDBHAV VINTAGE RESORT</p>
+          <a href="https://www.google.com/maps/place/UDBHAV+VINTAGE+RESORT/@13.2832906,74.7288802,17z/data=!3m1!4b1!4m9!3m8!1s0x3bbcbb5cd1447ebf:0x7218a57a1f8e5180!5m2!4m1!1i2!8m2!3d13.2832906!4d74.7314551!16s%2Fg%2F11vkzbn9x_?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+            <button className={styles.locationButton}>View Location on Google Maps</button>
+          </a>
+          </h2>
         </section>
+<br/>
+<br/>
+<br/>
+<section className={styles.wedding}>WEDDING</section>
+        <section className={styles.additionalGallery}>
+        <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
+            pagination={{ clickable: true }}
+            className={styles.swiper}
+          >
+            <SwiperSlide><img src="/media/add7.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add8.jpg" alt="Additional 2" /></SwiperSlide>
 
 
-
-
-
-
-
+            </Swiper>
+</section>
 
          
-          <h2>Wedding Venue</h2>
+         <section className={styles.weddingt}>
+           <p> Wedding Venue</p>
           <p>NARAYANAGURU AUDITORIUM, BANNANJE, UDUPI</p>
           
-          
+          </section>
           <a
   href="https://www.google.com/maps/place/Narayanaguru+Auditorium,+Udupi/@13.3456821,74.7361433,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbcbb794f8c3edd:0x6abdfc29f11180dd!8m2!3d13.3456821!4d74.7387182!16s%2Fg%2F11c2pmtqw7?entry=ttu"
   target="_blank"
@@ -99,7 +116,7 @@ export default function Main() {
           
         </section>
 
-        <section className={styles.videoSection}>
+   {/*}   <section className={styles.videoSection}>
           <div className={styles.textBlock}>
             <h3>Our Special Moments</h3>
             <p>Watch our love story unfold</p>
@@ -112,7 +129,7 @@ export default function Main() {
               Your browser does not support the video tag.
             </video>
           </div>
-        </section>
+        </section>*/}
 
         <footer className={styles.footer}>
           <p>We can't wait to celebrate with you!</p>
