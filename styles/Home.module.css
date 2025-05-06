@@ -236,7 +236,7 @@
 
 .function{
   font-family: 'Billion Dreams', cursive;
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #f10c9d; /* gold */
   text-shadow: 2px 2px 10px rgba(174, 13, 188, 0.6);
 }
@@ -267,4 +267,7 @@
   font-size: 1.5rem;
   color: #e70965; /* gold */
   text-shadow: 2px 2px 10px rgba(226, 15, 222, 0.57);
+}
+.cel{
+  font-family: 'Franklin Gothic Medium';
 }

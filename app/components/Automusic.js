@@ -14,7 +14,7 @@ export default function MusicPlayer() {
 
   const handleLogoClick = () => {
     if (audio) {
-      audio.play();
+      //audio.play();
       setTimeout(() => {
         router.push('/main');
       }, 1000); // wait 1 sec before navigating (optional)

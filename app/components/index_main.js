@@ -54,6 +54,10 @@ export default function Main() {
             <SwiperSlide><img src="/media/add5.jpg" alt="Additional 2" /></SwiperSlide>
           </Swiper>
         </section>
+        <br/>
+        <br/>
+        <br/>
+
 <h2 className={styles.function}>FUNCTIONS</h2>
         <section className={styles.venue}>
        
@@ -132,7 +136,7 @@ export default function Main() {
         </section>*/}
 
         <footer className={styles.footer}>
-          <p>We can't wait to celebrate with you!</p>
+          <p  className={styles.cel}>We can't wait to celebrate with you!</p>
         </footer>
       </main>
     </>
