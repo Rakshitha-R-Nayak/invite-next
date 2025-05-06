@@ -19,10 +19,10 @@ export default function Main() {
         <header className={styles.header}>
           <h1 className={styles.h1}>You're Invited!</h1>
           <h2 className={styles.nam}>SACHIN & VIBHA</h2>
-          <h2>We are getting married!</h2>
-          <h2 className="font-[calibri]">Save the date</h2>
+          <p>We are getting married!</p>
+          <p className="font-[calibri]">Save the date</p>
 
-          <p>Join us on 07-12-2025</p>
+          <p>Join us on 07-11-2025</p>
         </header>
 
         <section className={styles.gallery}>
@@ -37,8 +37,9 @@ export default function Main() {
           </div>
         </section>
 
-        <section className={styles.additionalGallery}>
+        
         <h3 className={styles.wed}>SACHIN WEDS VIBHA</h3>
+        <section className={styles.additionalGallery}>
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -62,7 +63,9 @@ export default function Main() {
         <section className={styles.venue}>
        
 
-<h2 className={styles.sangtext}>SANGEETH</h2>
+<h2 className={styles.sangtext}>SANGEETH<br/>
+02-11-2025</h2>
+
           <section className={styles.Sangeetgallery}>
           
           <Swiper
@@ -88,7 +91,8 @@ export default function Main() {
 <br/>
 <br/>
 <br/>
-<section className={styles.wedding}>WEDDING</section>
+<section className={styles.wedding}>WEDDING<br/>
+07-11-2025</section>
         <section className={styles.additionalGallery}>
         <Swiper
             modules={[Autoplay, Pagination]}

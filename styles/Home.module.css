@@ -14,7 +14,7 @@
     background-color: #daa7daa3;
     padding: 50px 20px;
     font-family: 'Dancing Script';
-    font-size: 27px;
+    font-size: 25px;
   
   text-shadow: 2px 2px 10px rgba(200, 15, 184, 0.6);
     
@@ -27,7 +27,7 @@
   }
   .nam{
     font-family: 'Billion Dreams', cursive;
-  font-size: 3rem;
+  font-size: 29px;
   color: #e30d63; /* gold */
   text-shadow: 2px 2px 10px rgba(236, 162, 13, 0.733);
   }
@@ -256,7 +256,7 @@
 .wedding{
 
   font-family: 'Pacifico', cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #e70965; /* gold */
   text-shadow: 2px 2px 10px rgba(226, 15, 222, 0.57);
 }
