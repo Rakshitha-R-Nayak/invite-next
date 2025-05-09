@@ -11,14 +11,15 @@
   }
   
   .header {
+    transition: none !important;
     background-color: #daa7daa3;
     padding: 50px 20px;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
     text-shadow: 2px 2px 10px rgba(200, 15, 184, 0.6);
   
-    /* Ensure immediate rendering */
-    transition: none !important;
+    
+    
   }
   
   
