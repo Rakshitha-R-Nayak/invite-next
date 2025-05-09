@@ -37,6 +37,7 @@ const styles = {
   container: {
     textAlign: 'center',
     marginTop: '100px',
+    backgroundColor: '#f0f0ff',
     
   },
   logo: {
