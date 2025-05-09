@@ -142,6 +142,7 @@ export default function Main() {
             className={styles.swiper}
           >
             <SwiperSlide><img src="/media/add7.jpg" alt="Additional 1" /></SwiperSlide>
+            <SwiperSlide><img src="/media/add9.jpg" alt="Additional 1" /></SwiperSlide>
             <SwiperSlide><img src="/media/add8.jpg" alt="Additional 2" /></SwiperSlide>
 
 
