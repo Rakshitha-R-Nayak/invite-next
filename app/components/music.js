@@ -8,7 +8,7 @@ export default function MusicPlayer() {
 
   useEffect(() => {
     if (!window.globalAudio) {
-      const music = new Audio('/media/neelashala.mp3');//change here
+      const music = new Audio('/media/nelashalbhame.mp3');//change here
       music.loop = true;
       window.globalAudio = music;
     }

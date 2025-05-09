@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { motion } from 'framer-motion'; // adjust this path if needed
+
 
 export default function Main() {
   return (
@@ -17,12 +19,50 @@ export default function Main() {
 
       <main className={styles.body}>
         <header className={styles.header}>
-          <h1 className={styles.h1}>You're Invited!</h1>
-          <h2 className={styles.nam}>SACHIN & VIBHA</h2>
-          <p>We are getting married!</p>
-          <p className="font-[calibri]">Save the date</p>
+        <div className="text-center p-8">
+      <motion.h1
+        className={styles.h1}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        You're Invited!
+      </motion.h1>
 
-          <p>Join us on 07-11-2025</p>
+      <motion.h2
+        className={styles.nam}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
+      >
+        SACHIN & VIBHA
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        We are getting married!
+      </motion.p>
+
+      <motion.p
+        className="font-[calibri]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        Save the date
+      </motion.p>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 2 }}
+      >
+        Join us on 07-11-2025
+      </motion.p>
+    </div>
         </header>
 
         <section className={styles.gallery}>
