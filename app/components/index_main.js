@@ -148,17 +148,11 @@ export default function Main() {
               </SwiperSlide>
             </Swiper>
 
-            <h2 className={styles.sangeeth}>
-              Sangeeth Venue
-              <p className="font-[Cinze]">UDBHAV VINTAGE RESORT</p>
-              <a
-                href="https://www.google.com/maps/place/UDBHAV+VINTAGE+RESORT"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className={styles.locationButton}>View Location on Google Maps</button>
-              </a>
-            </h2>
+            <h2 className={styles.sangeeth}>Sangeeth Venue <p className="font-[Cinze]">UDBHAV VINTAGE RESORT</p>
+             <a href="https://www.google.com/maps/place/UDBHAV+VINTAGE+RESORT/@13.2832906,74.7288802,17z/data=!3m1!4b1!4m9!3m8!1s0x3bbcbb5cd1447ebf:0x7218a57a1f8e5180!5m2!4m1!1i2!8m2!3d13.2832906!4d74.7314551!16s%2Fg%2F11vkzbn9x_?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <button className={styles.locationButton}>View Location on Google Maps</button>
+               </a> 
+               </h2>
           </section>
         </section>
 
@@ -187,13 +181,10 @@ export default function Main() {
         <section className={styles.weddingt}>
           <p>Wedding Venue</p>
           <p>NARAYANAGURU AUDITORIUM, BANNANJE, UDUPI</p>
-          <a
-            href="https://www.google.com/maps/place/Narayanaguru+Auditorium,+Udupi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className={styles.locationButton}>View Location on Google Maps</button>
-          </a>
+          
+            <a href="https://www.google.com/maps/place/Narayanaguru+Auditorium,+Udupi/@13.3456821,74.7361433,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbcbb794f8c3edd:0x6abdfc29f11180dd!8m2!3d13.3456821!4d74.7387182!16s%2Fg%2F11c2pmtqw7?entry=ttu" target="_blank" rel="noopener noreferrer" >
+             <button className={styles.locationButton}>View Location on Google Maps</button> 
+             </a>
         </section>
 
         <footer className={styles.footer}>
